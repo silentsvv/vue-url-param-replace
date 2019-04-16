@@ -19,7 +19,7 @@ Vue.use(urlParam)
 ``` javascript
 // 设置路由参数
 // 可以传对象 {a:1, c: [1,2]}和字符串 '?a=1 & c=2'
-// this.$setUrlParam(data, options) => options: { encode: false } // encode: 是否对参数encodeURIComponent加密
+// this.$setUrlParam(data, options) => options: { encode: false, listen: ['page] } // encode: 是否对参数encodeURIComponent加密, listen: 自动将挂载的data设置到url上
 this.$setUrlParam({a: 1, b:2, c: [1,2,3], d: {a:12}})
 
 // 读取路由参数
